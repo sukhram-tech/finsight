@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinSight Pro V4.0 | Initializing AI Core...</title>
+    
+    <!-- ===== your streamlit link ===== -->
+    <meta http-equiv="refresh" content="3; url=https://stock-predictor-pro-anima.streamlit.app">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {--bg-color: #0A0A0F; --primary-glow: #00A9FF; --secondary-glow: #A020F0; --text-primary: #EAEAEA; --text-secondary: #A0A0A0;}
+        * {margin: 0; padding: 0; box-sizing: border-box;}
+        body {font-family: 'Inter', sans-serif; background-color: var(--bg-color); color: var(--text-primary); display: flex; justify-content: center; align-items: center; height: 100vh; overflow: hidden;}
+        body::before {content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at 20% 20%, var(--primary-glow), transparent 40%), radial-gradient(circle at 80% 70%, var(--secondary-glow), transparent 40%); filter: blur(100px); opacity: 0.3; animation: moveGradient 15s alternate infinite;}
+        @keyframes moveGradient {from { transform: translate(0, 0) scale(1); } to { transform: translate(50px, -50px) scale(1.2); }}
+        .container {text-align: center; z-index: 10; padding: 20px;}
+        .logo {font-size: 2.5rem; font-weight: 700; letter-spacing: -1px; margin-bottom: 10px; background: linear-gradient(90deg, var(--primary-glow), var(--text-primary), var(--secondary-glow)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; animation: textShine 5s linear infinite;}
+        @keyframes textShine {to { background-position: 200% center; }}
+        .tagline {font-size: 1rem; font-weight: 300; color: var(--text-secondary); margin-bottom: 40px; letter-spacing: 2px; text-transform: uppercase;}
+        .loader {width: 60px; height: 60px; margin: 0 auto 30px auto; border: 3px solid transparent; border-top-color: var(--primary-glow); border-left-color: var(--secondary-glow); border-radius: 50%; animation: spin 1.2s linear infinite;}
+        @keyframes spin {to { transform: rotate(360deg); }}
+        .status-text {font-size: 0.9rem; color: var(--text-secondary);}
+        .status-text span {animation: blink 1.5s infinite;}
+        .status-text span:nth-child(2) { animation-delay: 0.2s; } .status-text span:nth-child(3) { animation-delay: 0.4s; }
+        @keyframes blink {0%, 100% { opacity: 0.2; } 50% { opacity: 1; }}
+        .footer {position: absolute; bottom: 20px; font-size: 0.75rem; color: #444; letter-spacing: 1px;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="logo">FinSight Pro V4.0</h1>
+        <p class="tagline">Financial Intelligence System</p>
+        <div class="loader"></div>
+        <p class="status-text">Initializing AI Core<span>.</span><span>.</span></p>
+    </div>
+    <div class="footer">AUTHORIZED ACCESS ONLY | SECURE CONNECTION ESTABLISHED</div>
+</body>
+</html>
